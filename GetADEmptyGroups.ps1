@@ -1,0 +1,1 @@
+Get-ADGroup -Filter * -Properties Members | where { $_.Members.Count -eq 0 } | Select-Object Name | Format-Table -AutoSize
